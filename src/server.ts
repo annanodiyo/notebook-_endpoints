@@ -1,10 +1,14 @@
-import expres from "express";
-import bodyParser from "body-parser";
+import express from "express";
+import * as dotenv from "dotenv";
+import { router as notesRouter } from "./appnotes";
 
-const server = expres();
-server.use(bodyParser.json());
+dotenv.config();
 
+const app = express();
 const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
-  console.log("Server is running on port ${PORT}");
+
+app.use(express.json());
+app.use("/notes", notesRouter);
+app.listen(PORT, () => {
+  console.log("Server is running on port || 4000");
 });
