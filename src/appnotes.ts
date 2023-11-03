@@ -16,6 +16,8 @@ router.post("/", (req: Request, res: Response) => {
   res.status(201).json(newNote);
 });
 router.get("/", (req: Request, res: Response) => {
+  console.log("sdasdsadas");
+
   res.json(notes_);
 });
 

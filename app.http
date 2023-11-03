@@ -1,0 +1,9 @@
+POST http://localhost:4000/notes/takeNotes
+Content-Type: application/json
+
+{
+    "title":"Creating Notebooks",
+    "description":"Use Week 4 assessment to:
+    Add DB helpers to rewrite the controllers.Validate requests Create an interface to create a note and display all notes and integrate with the backendLink to the assessment"
+
+}

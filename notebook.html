@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Note book</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar"></div>
+      <div class="notebook">
+        <div class="top">
+          <h1>📝 Notes</h1>
+        </div>
+        <div class="mainbody">
+          <form class="takenotes">
+            <div class="notebody">
+              <label for="Note title">Title</label><br />
+              <input type="text" placeholder="Title" /><br />
+              <label for="description">Description</label><br />
+              <textarea
+                name="describe"
+                id="details"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+          <div class="btns">
+            <input type="submit" value="Cancel" id="cancelbtn" />
+            <input type="submit" value="Save" id="saveBtn" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
